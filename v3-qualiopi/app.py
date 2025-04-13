@@ -16,14 +16,18 @@ def load_documents(path):
     ]
 
 # Initialisation des modèles
-llm = ChatOllama(model="mistral")
-embeddings = OllamaEmbeddings(model="nomic-embed-text")
+
+# Modèle de langage Mistral (via Ollama) pour les évaluations
+llm = ChatOllama(model="mistral") 
+#Modèle de vectorisation "nomic-embed-text" pour les comparaisons sémantiques
+embeddings = OllamaEmbeddings(model="nomic-embed-text") 
 
 # Vectorisation des critères
+# Crée un index vectoriel (FAISS) contenant tous les critères Qualiopi
 criteria_store = FAISS.from_texts(
     [f"{c['id']}: {c['label']} - {c['description']}" for c in criteria.values()], 
     embeddings
-)
+) 
 
 
 
@@ -49,17 +53,17 @@ for doc in load_documents("v3-qualiopi/docs/"):
 
             # Prompt ciblé
             response = llm.invoke(f"""
-Évaluez STRICTEMENT ce document selon le critère Qualiopi suivant :
+            Évaluez STRICTEMENT ce document selon le critère Qualiopi suivant :
 
-CRITÈRE [{crit['id']}] :
-{crit['label']}
-{crit['description']}
+            CRITÈRE [{crit['id']}] :
+            {crit['label']}
+            {crit['description']}
 
-DOCUMENT :
-{doc.page_content}
+            DOCUMENT :
+            {doc.page_content}
 
-Répondez UNIQUEMENT par :
-Score: X/5
-Justification: [max 20 mots]
-""")
+            Répondez UNIQUEMENT par :
+            Score: X/5
+            Justification: [max 20 mots]
+            """)
             print(f"\n🧩 {crit['id']} - {crit['label']}\n{response.content.strip()}")
