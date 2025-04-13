@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "label": "Information du public",
+        "description": "L’organisme doit communiquer clairement et de manière accessible les éléments suivants :\n- Les objectifs de la formation\n- Les modalités d'accès (pré-requis, délais, conditions)\n- Les méthodes mobilisées (présentiel, distanciel, synchrone, asynchrone)\n- Les modalités d’évaluation\n- Les taux de réussite ou de satisfaction (si disponibles)\n- Les débouchés ou possibilités post-formation",
+        "barème": {
+            "5": "Tous les éléments ci-dessus sont présents, bien rédigés et précis",
+            "4": "Tous les éléments sont là mais certains manquent de clarté ou de structure",
+            "3": "Plusieurs éléments sont absents ou flous",
+            "2": "L’information est très partielle",
+            "1": "Aucun des éléments n’est communiqué clairement"
+        }
+    },
+    {
+        "id": "2",
+        "label": "Objectifs pédagogiques",
+        "description": "Les objectifs pédagogiques doivent être clairs, mesurables, et atteindre un niveau suffisant de détail. Ils doivent permettre de juger des compétences acquises à l’issue de la formation.",
+        "barème": {
+            "5": "Les objectifs sont parfaitement définis, mesurables, et clairement liés aux compétences",
+            "4": "Les objectifs sont définis mais manquent parfois de précision ou d'alignement",
+            "3": "Les objectifs sont flous ou trop généraux",
+            "2": "Les objectifs sont partiellement définis et peu mesurables",
+            "1": "Les objectifs sont absents ou totalement flous"
+        }
+    },
+    {
+        "id": "3",
+        "label": "Modalités d'évaluation",
+        "description": "Les modalités d’évaluation doivent être définies et communiquées de manière précise, en incluant des critères objectifs et des résultats attendus. Elles doivent permettre d’évaluer les compétences acquises à chaque étape.",
+        "barème": {
+            "5": "Les modalités d’évaluation sont claires, précises et parfaitement alignées avec les objectifs pédagogiques",
+            "4": "Les modalités sont présentes, mais manquent de détails ou de cohérence",
+            "3": "Les modalités sont incomplètes ou manquent d'objectivité",
+            "2": "Les modalités sont floues et peu fiables",
+            "1": "Les modalités d’évaluation sont absentes ou inutilisables"
+        }
+    }
+]

@@ -1,0 +1,14 @@
+Titre : Initiation à la cybersécurité
+
+Public visé : Toute personne débutant dans le domaine de la cybersécurité.
+
+Objectifs pédagogiques :
+- Comprendre les principaux types de cyberattaques
+- Apprendre les bonnes pratiques de sécurité informatique
+- Savoir mettre en place une protection de base sur un système
+
+Durée : 3 jours
+Modalités : En présentiel, à Paris
+Résultats attendus : Attestation de suivi + QCM validé à 70%
+Moyens pédagogiques : Présentations, démonstrations, exercices pratiques sur VMs
+Formateurs : Experts en cybersécurité avec 5+ ans d'expérience
