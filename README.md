@@ -23,3 +23,6 @@ Upgrade
     pip install -r requirements.txt --upgrade
 
 
+## 3. Run
+
+    python v3-qualiopi/app.py  
